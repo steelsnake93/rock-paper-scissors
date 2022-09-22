@@ -3,9 +3,7 @@ let winners = [];
 
 // To check 5 rounds.
 function game() {
-    for (let i = 0; i <= 5; i++){
-        playRound(i);
-    }
+        playRound();
     logWins();
 }
 

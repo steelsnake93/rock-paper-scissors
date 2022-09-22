@@ -10,11 +10,14 @@
 <body>
     <div class="flex-container">
         <h1>Rock Paper Scissors</h1>
-        <button onclick="game()">Start Game</button>
-        <p>
-            This game is played in the console. On Windows/Linux press CTRL Shift J
-            to open the console.
-        </p>
+        <button onclick="game()">Start Game</button>      
+    </div>
+    <div class="score">
+        <h1 class="ties"></h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="resset" onclick="resetGame()">Play Again?</button>
     </div>
 </body>
 <script src="main.js"></script>
