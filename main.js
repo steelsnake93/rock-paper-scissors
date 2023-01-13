@@ -3,7 +3,9 @@ let winners = [];
 
 // To check 5 rounds.
 function game() {
-        playRound();
+    for (let i = 1; i <= 5; i++) {
+        playRound(i);
+    }
     logWins();
 }
 
@@ -65,11 +67,11 @@ function checkWinner(choiceP, choiceC){
 function logWins() {
     let playerWins = winners.filter((item) => item == 'Player').length;
     let computerWins = winners.filter((item) => item == 'Computer').length;
-    let ties = winners.filter((item) => item == 'Ties').length;
+    let tie = winners.filter((item) => item == 'Tie').length;
     console.log('Result');
     console.log('Player Wins:', playerWins);
     console.log('Computer Wins:', computerWins);
-    console.log('Ties:', ties);
+    console.log('Tie:', tie);
 }
 
 function logRound(playerChoice, computerChoice, winner, round) {
